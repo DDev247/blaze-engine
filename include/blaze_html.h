@@ -48,9 +48,9 @@ namespace blaze::html {
         std::string name = "";
     };
 
-    CREATE_ELEMENT(Head, head);
-    CREATE_ELEMENT(Body, body);
-    CREATE_ELEMENT(Title, title);
+    // CREATE_ELEMENT(Head, head);
+    // CREATE_ELEMENT(Body, body);
+    // CREATE_ELEMENT(Title, title);
 
     class Document : public Element {
     public:

@@ -12,8 +12,8 @@ int main(int argc, char** argv) {
     /* ------------------------- Test hierarchy creation ------------------------ */
 
     blaze::html::Document document;
-    blaze::html::HeadElement head;
-    blaze::html::TitleElement title;
+    blaze::html::Element head("head");
+    blaze::html::Element title("title");
     title.textContent = "Test Document";
 
     head.children.push_back(&title);
