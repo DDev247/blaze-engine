@@ -231,7 +231,7 @@ std::vector<DocumentParserToken> DocumentParser::tokenize(std::string docString)
 }
 
 std::map<std::string, DocumentParserToken::Type> DocumentParser::tokenMap = {
-	{ "^[a-zA-Z0-9!]+", DocumentParserToken::Type::String},
+	{ "^[a-zA-Z0-9\\!\\?\\:\\;]+", DocumentParserToken::Type::String},
 	{ "^[ ]+", DocumentParserToken::Type::Space},
 	{ "^(=)", DocumentParserToken::Type::Setter},
 	{ "^\\\"", DocumentParserToken::Type::Value},
